@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Formulario" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe el nombre de tu producto" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6s-nD-1sw">
+                                <rect key="frame" x="23.5" y="207" width="367" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe la cantidad de tu producto:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UQF-pR-Brm">
+                                <rect key="frame" x="23.5" y="431" width="367" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe el modelo de tu producto" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14S-sh-qgW">
+                                <rect key="frame" x="23.5" y="319" width="367" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe el precio de tu producto" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rWy-8F-KCW">
+                                <rect key="frame" x="23.5" y="543" width="367" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPN-tc-8Se">
+                                <rect key="frame" x="23.5" y="662" width="367" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nsR-7o-wka"/>
+                                </constraints>
+                                <state key="normal" title="Guardar Producto"/>
+                                <connections>
+                                    <action selector="guardarProducto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6pF-Jb-ExG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcM-JX-9AW">
+                                <rect key="frame" x="186" y="103" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8B-Xf-5sa">
+                                <rect key="frame" x="139.5" y="101.5" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBb-Q7-hjx">
+                                <rect key="frame" x="20" y="616" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rWy-8F-KCW" firstAttribute="width" secondItem="UQF-pR-Brm" secondAttribute="width" id="4Fv-HS-CNi"/>
+                            <constraint firstItem="BPN-tc-8Se" firstAttribute="top" secondItem="rWy-8F-KCW" secondAttribute="bottom" constant="85" id="9Va-SN-GkH"/>
+                            <constraint firstItem="Y6s-nD-1sw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.886473" id="EQ9-bb-IU2"/>
+                            <constraint firstItem="14S-sh-qgW" firstAttribute="width" secondItem="Y6s-nD-1sw" secondAttribute="width" id="Fwi-IC-suo"/>
+                            <constraint firstItem="14S-sh-qgW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3:4" id="IZR-fx-cgm"/>
+                            <constraint firstItem="14S-sh-qgW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PQh-Zk-u6c"/>
+                            <constraint firstItem="Y6s-nD-1sw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:2" id="VOk-7o-NJh"/>
+                            <constraint firstItem="rWy-8F-KCW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="10:8" id="WAC-x7-mzu"/>
+                            <constraint firstItem="e8B-Xf-5sa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:4" id="f9Z-Rt-xB9"/>
+                            <constraint firstItem="UQF-pR-Brm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g6K-7o-vdH"/>
+                            <constraint firstItem="aBb-Q7-hjx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gRf-V4-788"/>
+                            <constraint firstItem="rWy-8F-KCW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdf-Aj-ivo"/>
+                            <constraint firstItem="UQF-pR-Brm" firstAttribute="width" secondItem="14S-sh-qgW" secondAttribute="width" id="gw8-X6-KLp"/>
+                            <constraint firstItem="BPN-tc-8Se" firstAttribute="width" secondItem="rWy-8F-KCW" secondAttribute="width" id="hEd-Cu-VC3"/>
+                            <constraint firstItem="e8B-Xf-5sa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lgb-kl-fXf"/>
+                            <constraint firstItem="aBb-Q7-hjx" firstAttribute="top" secondItem="rWy-8F-KCW" secondAttribute="bottom" constant="39" id="nRZ-UO-cCY"/>
+                            <constraint firstItem="BPN-tc-8Se" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qhu-ag-2ma"/>
+                            <constraint firstItem="Y6s-nD-1sw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rW0-WS-Bcj"/>
+                            <constraint firstItem="UQF-pR-Brm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wuZ-hk-dYl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnGuardar" destination="BPN-tc-8Se" id="A9L-R9-3pn"/>
+                        <outlet property="swDisponibilidad" destination="aBb-Q7-hjx" id="Vlf-aZ-r67"/>
+                        <outlet property="tfCantidadProducto" destination="UQF-pR-Brm" id="Th8-LT-jF1"/>
+                        <outlet property="tfModeloProducto" destination="14S-sh-qgW" id="8jL-js-VJK"/>
+                        <outlet property="tfNombreProducto" destination="Y6s-nD-1sw" id="aSh-l3-OGZ"/>
+                        <outlet property="tfPrecioProducto" destination="rWy-8F-KCW" id="iwY-9I-waf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
